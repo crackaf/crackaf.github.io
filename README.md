@@ -1,7 +1,7 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://ghostdart.github.io/">
-    <img alt="Gatsby" src="https://github.com/ghostdart/ghostdart.github.io/blob/master/src/images/icon.png" width="60" />
+    <img alt="Gatsby" src="https://github.com/ghostdart/ghostdart.github.io/blob/main/src/images/icon.png" width="60" />
   </a>
 </p>
 <h1 align="center">
