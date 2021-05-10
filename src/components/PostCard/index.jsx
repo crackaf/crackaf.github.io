@@ -24,7 +24,7 @@ const PostCard = (props) => {
           <p>{frontmatter ? frontmatter.excerpt : ''}</p>
           <p style={{ color: '#ce6d96', wordSpacing: '10px' }}>
             {
-                `#${frontmatter.tags.join(' #')}`
+              `#${frontmatter.tags.join(' #')}`
             }
           </p>
         </div>

@@ -48,7 +48,7 @@ const TagPage = ({ data, pageContext }) => {
           </div>
           <Row gutter={[20, 20]}>
             {posts.map((post, key) => (
-            // eslint-disable-next-line react/no-array-index-key
+              // eslint-disable-next-line react/no-array-index-key
               <Col key={key} xs={24} sm={24} md={12} lg={8}>
                 <PostCard data={post} />
               </Col>

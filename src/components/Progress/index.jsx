@@ -20,7 +20,7 @@ const ProgressBar = (props) => {
         fontSize: '13px',
       }}
       >
-        <span>{ text || '' }</span>
+        <span>{text || ''}</span>
       </div>
     </div>
   );

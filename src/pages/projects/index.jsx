@@ -1,5 +1,5 @@
 import React from 'react'
-import { Layout, Row, Col } from 'antd';
+import { Layout } from 'antd';
 import Header from '../../components/PageLayout/Header';
 import SidebarWrapper from '../../components/PageLayout/Sidebar';
 import SEO from '../../components/Seo';
