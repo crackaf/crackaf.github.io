@@ -18,7 +18,7 @@ export default function projects() {
         />
         <Header />
         <SidebarWrapper>
-          hello
+          <a href="/tags/project">Click Here</a>
         </SidebarWrapper>
       </Layout>
     </Layout>
