@@ -37,6 +37,12 @@ export default class Resume extends Component {
           in the way of building various web applications."
           path="resume"
         />
+        <p>
+          If failed!
+          <a href="/resume.pdf">
+            Click Here
+          </a>.
+        </p>
         <Document
           file="../resume.pdf"
           onLoadSuccess={this.onDocumentLoadSuccess}
