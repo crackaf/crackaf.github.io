@@ -22,7 +22,7 @@ module.exports = {
     instagram: 'https://www.instagram.com/hunzlahmalik/',
     rss: '/rss.xml',
   },
-  contactFormUrl: process.env.CONTACT_FORM_ENDPOINT || 'https://getform.io/f/09a3066f-c638-40db-ad59-05e4ed71e451',
+  contactFormUrl: process.env.CONTACT_FORM_ENDPOINT || 'https://getform.io/f/758b7a1b-7fa6-459c-aa7f-7c54c4556a8a',
   googleAnalyticTrackingId: process.env.GA_TRACKING_ID || '#',
   tags: {
     project: {

@@ -8,7 +8,6 @@ const SkillsProgress = () => (
     <p>As you are reading this, I'll be working on some new technology stack or Harnising the current ones.</p>
     <Row gutter={[20, 20]}>
       <Col xs={24} sm={24} md={12}>
-
         <ProgressBar
           percent={90}
           text="C/C++"

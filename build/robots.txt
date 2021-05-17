@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://ghostdart.github.io/sitemap.xml
-Host: https://ghostdart.github.io

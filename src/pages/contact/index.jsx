@@ -24,7 +24,7 @@ const Contact = () => (
         <Row gutter={[40, 20]}>
           <Col sm={24} md={24} lg={12}>
             <img
-              src="../../contact.png"
+              src="../contact.png"
               alt="contact"
               className="widthFull contactImgBorder"
             />
