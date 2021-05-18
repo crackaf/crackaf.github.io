@@ -6,7 +6,7 @@ module.exports = {
   author: 'Hunzlah ',
   postsForArchivePage: 3,
   defaultLanguage: 'en',
-  disqusScript: process.env.DISQUS_SCRIPT || 'https://ghostdart.disqus.com/embed.js',
+  disqusScript: process.env.DISQUS_SCRIPT || '#', //'https://ghostdart.disqus.com/embed.js',
   pages: {
     home: '/',
     blog: 'blog',
