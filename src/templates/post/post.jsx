@@ -16,14 +16,15 @@ import style from './post.module.less';
 const Post = ({ data }) => {
   const { html, frontmatter } = data.markdownRemark;
   const {
-    title, cover: { childImageSharp: { fluid } }, excerpt, path,
+    title,
+    cover: {
+      childImageSharp: { fluid },
+    },
+    excerpt,
+    path,
   } = frontmatter;
 
-  const canonicalUrl = Utils.resolvePageUrl(
-    Config.siteUrl,
-    Config.pathPrefix,
-    path,
-  );
+  const canonicalUrl = Utils.resolvePageUrl(Config.siteUrl, Config.pathPrefix, path);
   return (
     <Layout className="outerPadding">
       <Layout className="container">
@@ -31,7 +32,17 @@ const Post = ({ data }) => {
           title={title}
           description={excerpt}
           path={path}
-          keywords={['Rolwin', 'Reevan', 'Monteiro', 'FullStack developer', 'Javascript', 'ReactJS', 'NodeJS', 'Gatsby', 'technology']}
+          keywords={[
+            'Rolwin',
+            'Reevan',
+            'Monteiro',
+            'FullStack developer',
+            'Javascript',
+            'ReactJS',
+            'NodeJS',
+            'Gatsby',
+            'technology',
+          ]}
         />
         <Header />
         <SidebarWrapper>
@@ -70,10 +81,7 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      filter: {
-        frontmatter: { path: { ne: $postPath } }
-        fileAbsolutePath: { regex: "/index.md$/" }
-      }
+      filter: { frontmatter: { path: { ne: $postPath } }, fileAbsolutePath: { regex: "/index.md$/" } }
     ) {
       edges {
         node {

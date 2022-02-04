@@ -2,11 +2,19 @@
   "extends": "airbnb",
   "rules": {
     "react/prop-types": 0,
-    "react/no-danger":0
+    "react/no-danger": 0
   },
   "globals": {
     "window": true,
     "FormData": true,
     "fetch": true
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["./src"],
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
   }
 }

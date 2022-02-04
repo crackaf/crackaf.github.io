@@ -9,7 +9,7 @@ import style from '../../components/PageLayout/Sidebar/sidebar.module.less';
 import Config from '../../../config';
 
 const {
-  facebook, github, instagram, twitter,
+  facebook, github, instagram, twitter, linkedIn,
 } = Config.social;
 
 const Contact = () => (
@@ -19,9 +19,19 @@ const Contact = () => (
         title="Contact"
         description="Hello folks Hunzlah here. You can contact me through the contact form on this page.
                     Please feel free to contact me, don't be shy guys.
-                    Find me on github - ghostdart."
+                    Find me on github - crackaf."
         path="/contact"
-        keywords={['Muhammad', 'Hunzlah', 'Malik', 'FullStack developer', 'C++', 'Python', 'Javascript', 'ReactJS', 'FAST']}
+        keywords={[
+          'Muhammad',
+          'Hunzlah',
+          'Malik',
+          'FullStack developer',
+          'C++',
+          'Python',
+          'Javascript',
+          'ReactJS',
+          'FAST',
+        ]}
       />
       <Header />
       <SidebarWrapper>
@@ -29,18 +39,25 @@ const Contact = () => (
           <h1 className="titleSeparate">Contact</h1>
         </div>
         <div className="centerAlign box">
-          <a href={facebook} target="_blank" label="button" rel="noopener noreferrer"><FA name="facebook-f" size="2x" /></a>
-          <a href={twitter} target="_blank" label="button" rel="noopener noreferrer"><FA name="twitter" size="2x" /></a>
-          <a href={github} target="_blank" label="button" rel="noopener noreferrer"><FA name="github" size="2x" /></a>
-          <a href={instagram} target="_blank" label="button" rel="noopener noreferrer"><FA name="instagram" size="2x" /></a>
+          <a href={github} target="_blank" label="button" rel="noopener noreferrer">
+            <FA name="github" size="2x" />
+          </a>
+          <a href={linkedIn} target="_blank" label="button" rel="noopener noreferrer">
+            <FA name="linkedin" size="2x" />
+          </a>
+          <a href={facebook} target="_blank" label="button" rel="noopener noreferrer">
+            <FA name="facebook-f" size="2x" />
+          </a>
+          <a href={twitter} target="_blank" label="button" rel="noopener noreferrer">
+            <FA name="twitter" size="2x" />
+          </a>
+          <a href={instagram} target="_blank" label="button" rel="noopener noreferrer">
+            <FA name="instagram" size="2x" />
+          </a>
         </div>
         <Row gutter={[40, 20]}>
           <Col sm={24} md={24} lg={12}>
-            <img
-              src="../contact.png"
-              alt="contact"
-              className="widthFull contactImgBorder"
-            />
+            <img src="../contact.png" alt="contact" className="widthFull contactImgBorder" />
           </Col>
           <ContactForm />
         </Row>

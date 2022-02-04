@@ -22,12 +22,19 @@ const AboutMe = () => {
           title="About"
           description={description}
           path=""
-          keywords={['Rolwin', 'Reevan', 'Monteiro', 'FullStack developer', 'Javascript', 'ReactJS', 'NodeJS', 'Gatsby']}
+          keywords={[
+            'Rolwin',
+            'Reevan',
+            'Monteiro',
+            'FullStack developer',
+            'Javascript',
+            'ReactJS',
+            'NodeJS',
+            'Gatsby',
+          ]}
         />
         <h1 className="titleSeparate">About Me</h1>
-        <p>
-          {pageText.paraOne}
-        </p>
+        <p>{pageText.paraOne}</p>
         <p dangerouslySetInnerHTML={domHtml(pageText.paraTwo)} />
       </div>
       <Row gutter={[20, 20]}>

@@ -12,7 +12,7 @@ import Config from '../../../../config';
 
 const { Content } = Layout;
 const {
-  facebook, github, instagram, twitter,
+  github, instagram, linkedIn,
 } = Config.social;
 
 const DomContent = () => (
@@ -28,10 +28,15 @@ const DomContent = () => (
       </div>
       <div className={`${style.badge} ${style.badgeGray}`}>Undergrad</div>
       <div className="centerAlign box">
-        <a href={facebook} target="_blank" label="button" rel="noopener noreferrer"><FA name="facebook-f" /></a>
-        <a href={twitter} target="_blank" label="button" rel="noopener noreferrer"><FA name="twitter" /></a>
-        <a href={github} target="_blank" label="button" rel="noopener noreferrer"><FA name="github" /></a>
-        <a href={instagram} target="_blank" label="button" rel="noopener noreferrer"><FA name="instagram" /></a>
+        <a href={linkedIn} target="_blank" label="button" rel="noopener noreferrer">
+          <FA name="linkedin" />
+        </a>
+        <a href={github} target="_blank" label="button" rel="noopener noreferrer">
+          <FA name="github" />
+        </a>
+        <a href={instagram} target="_blank" label="button" rel="noopener noreferrer">
+          <FA name="instagram" />
+        </a>
       </div>
       <ul className={`box ${style.badge} contactBlock`}>
         <li className={`${style.contactBlockItem}`}>
@@ -42,24 +47,27 @@ const DomContent = () => (
           &nbsp; &nbsp; September,2000
         </li>
         <li className={`${style.contactBlockItem}`}>
-          <span><FeatherIcon size="19" icon="map-pin" /></span>
+          <span>
+            <FeatherIcon size="19" icon="map-pin" />
+          </span>
           {' '}
           &nbsp; &nbsp; Bahawalpur, Pakistan
         </li>
         <li className={`${style.contactBlockItem}`}>
-          <span><FeatherIcon size="19" icon="mail" /></span>
+          <span>
+            <FeatherIcon size="19" icon="mail" />
+          </span>
           {' '}
           &nbsp; &nbsp;
-          <a
-            href="mailto:hunzlahmalik@gmail.com"
-            target="_top"
-          >
+          <a href="mailto:hunzlahmalik@gmail.com" target="_top">
             <span className={style.emailHider}>@</span>
           </a>
         </li>
       </ul>
       <div className={style.resumeDownload}>
-        <a href="../resume.pdf" download target="_blank">Download CV</a>
+        <a href="../HunzlahMalikResume.pdf" download target="_blank">
+          Download CV
+        </a>
       </div>
     </div>
   </aside>
@@ -92,9 +100,7 @@ const Sidebar = (props) => {
               {domContent}
             </Col>
             <Col sm={24} md={15} lg={18}>
-              <Layout className={`${style.background} ${style.boxContent} borderRadiusSection`}>
-                {children}
-              </Layout>
+              <Layout className={`${style.background} ${style.boxContent} borderRadiusSection`}>{children}</Layout>
             </Col>
           </Row>
         </Content>
@@ -110,9 +116,7 @@ export const Sidebar404 = (props) => {
       <Content className={`${style.content} ${style.background} `}>
         <Row>
           <Col sm={24} md={24} lg={24}>
-            <Layout className={`${style.background} ${style.boxContent} ${style.sideBar404Radius}`}>
-              {children}
-            </Layout>
+            <Layout className={`${style.background} ${style.boxContent} ${style.sideBar404Radius}`}>{children}</Layout>
           </Col>
         </Row>
       </Content>

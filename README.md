@@ -1,7 +1,7 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <a href="https://ghostdart.github.io/">
-    <img alt="Gatsby" src="https://github.com/ghostdart/ghostdart.github.io/blob/main/src/images/icon.png" width="60" />
+  <a href="https://crackaf.github.io/">
+    <img alt="Gatsby" src="https://github.com/crackaf/crackaf.github.io/blob/main/src/images/icon.png" width="60" />
   </a>
 </p>
 <h1 align="center">
@@ -11,7 +11,6 @@
 <h3 align="center">Credits: <a href='https://github.com/rolwin100/' target='_blank'>Rolwin</a><br>Very few edits by me 😊 </h3>
 This starter consists of ant design system you can use it for your personal blog. I have give a lot of time in developing this starter because I found that there were not much starters with a very good design. Please give a star to this project if you have like it to encourage me 😄. Thank you.
 
-
 ## 🚀 Quick start
 
 1.  **Setup the project by.**
@@ -19,9 +18,9 @@ This starter consists of ant design system you can use it for your personal blog
     clone the project and install the dependencies
 
     ```shell
-    
+
     git clone https://github.com/rolwin100/rolwinreevan_gatsby_blog.git
-    cd rolwinreevan_gatsby_blog 
+    cd rolwinreevan_gatsby_blog
     npm install
     ```
 
@@ -37,7 +36,6 @@ This starter consists of ant design system you can use it for your personal blog
     Your site is now running at `http://localhost:8000`!
 
     _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
-
 
 ## 🧐 What's inside?
 
@@ -75,13 +73,13 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 6.  **`gatsby-config.js`**: This is the main configuration file for a Gatsby site. This is where you can specify information about your site (metadata) like the site title and description, which Gatsby plugins you’d like to include, etc. (Check out the [config docs](https://www.gatsbyjs.org/docs/gatsby-config/) for more detail).
 
-7.  **`gatsby-config.plugins.js`**: This file contains the plugin configurations which is used in the gatsby-config.js. For modularity purpose we do this. 
+7.  **`gatsby-config.plugins.js`**: This file contains the plugin configurations which is used in the gatsby-config.js. For modularity purpose we do this.
 
 8.  **`gatsby-node.js`**: This file is where Gatsby expects to find any usage of the [Gatsby Node APIs](https://www.gatsbyjs.org/docs/node-apis/) (if any). These allow customization/extension of default Gatsby settings affecting pieces of the site build process.
 
 9.  **`gatsby-ssr.js`**: This file is where Gatsby expects to find any usage of the [Gatsby server-side rendering APIs](https://www.gatsbyjs.org/docs/ssr-apis/) (if any). These allow customization of default Gatsby settings affecting server-side rendering.
 
-10.  **`LICENSE`**: Gatsby is licensed under the MIT license.
+10. **`LICENSE`**: Gatsby is licensed under the MIT license.
 
 11. **`package-lock.json`** (See `package.json` below, first). This is an automatically generated file based on the exact versions of your npm dependencies that were installed for your project. **(You won’t change this file directly).**
 

@@ -8,32 +8,14 @@ const SkillsProgress = () => (
     <p>As you are reading this, I'll be working on some new technology stack or Harnising the current ones.</p>
     <Row gutter={[20, 20]}>
       <Col xs={24} sm={24} md={12}>
-        <ProgressBar
-          percent={90}
-          text="C/C++"
-        />
-        <ProgressBar
-          percent={80}
-          text="Python"
-        />
-        <ProgressBar
-          percent={70}
-          text="Javascript"
-        />
+        <ProgressBar percent={90} text="C/C++" />
+        <ProgressBar percent={80} text="Python" />
+        <ProgressBar percent={80} text="Javascript" />
       </Col>
       <Col xs={24} sm={24} md={12}>
-        <ProgressBar
-          percent={70}
-          text="Django"
-        />
-        <ProgressBar
-          percent={60}
-          text="ReactJS"
-        />
-        <ProgressBar
-          percent={70}
-          text="NodeJS"
-        />
+        <ProgressBar percent={70} text="Django" />
+        <ProgressBar percent={80} text="ReactJS" />
+        <ProgressBar percent={80} text="NodeJS" />
       </Col>
     </Row>
   </div>

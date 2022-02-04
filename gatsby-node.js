@@ -5,11 +5,17 @@ const config = require('./config');
 const utils = require('./src/utils/pageUtils');
 
 exports.createPages = ({ actions, graphql }) => {
-  const { createPage } = actions;
+  const { createRedirect, createPage } = actions;
+
+  createRedirect({
+    fromPath: '/projects',
+    toPath: '/tags/project',
+    isPermanent: true,
+  });
 
   return graphql(`
     {
-      allMarkdownRemark(sort: {order: DESC, fields: [frontmatter___date]}) {
+      allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
         edges {
           node {
             frontmatter {
@@ -20,7 +26,7 @@ exports.createPages = ({ actions, graphql }) => {
           }
         }
       }
-    }    
+    }
   `).then((result) => {
     if (result.errors) return Promise.reject(result.errors);
 
@@ -56,16 +62,15 @@ exports.createPages = ({ actions, graphql }) => {
       });
     });
 
-    allTags
-      .forEach((tag) => {
-        createPage({
-          path: utils.resolvePageUrl(config.pages.tag, tag),
-          component: path.resolve('src/templates/tags/index.jsx'),
-          context: {
-            tag,
-          },
-        });
+    allTags.forEach((tag) => {
+      createPage({
+        path: utils.resolvePageUrl(config.pages.tag, tag),
+        component: path.resolve('src/templates/tags/index.jsx'),
+        context: {
+          tag,
+        },
       });
+    });
 
     return 1;
   });

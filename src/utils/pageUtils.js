@@ -11,8 +11,7 @@ const Utils = {
     const urlPath = path.toString().trim();
     if (urlPath) {
       // eslint-disable-next-line no-param-reassign
-      resolvedUrl
-          += (resolvedUrl === '' ? '' : '/') + urlPath.replace(/^\/|\/$/g, '');
+      resolvedUrl += (resolvedUrl === '' ? '' : '/') + urlPath.replace(/^\/|\/$/g, '');
     }
 
     resolvedUrl = resolvedUrl[0] !== '/' ? `/${resolvedUrl}` : resolvedUrl;
@@ -61,13 +60,12 @@ const Utils = {
    * translated post's paths as values.
    */
   getRelatedTranslations: (post, postList) => postList
-    .filter(({ node }) =>
-    // Get posts in the same folder of provided post
-      // eslint-disable-next-line implicit-arrow-linebreak
-      (
-        node.fileAbsolutePath.split('/').slice(-2, -1)[0]
-          === post.fileAbsolutePath.split('/').slice(-2, -1)[0]
-      ))
+    .filter(
+      ({ node }) =>
+        // Get posts in the same folder of provided post
+        // eslint-disable-next-line implicit-arrow-linebreak
+        node.fileAbsolutePath.split('/').slice(-2, -1)[0] === post.fileAbsolutePath.split('/').slice(-2, -1)[0],
+    )
     .map(({ node }) => {
       const lang = node.fileAbsolutePath.split('.').slice(-2, -1)[0];
       return {

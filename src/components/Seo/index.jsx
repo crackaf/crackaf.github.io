@@ -20,32 +20,15 @@ const detailsQuery = graphql`
 `;
 
 function SEO({
-  title,
-  description,
-  path,
-  lang,
-  keywords,
-  contentType,
-  imageUrl,
-  translations,
-  meta,
+  title, description, path, lang, keywords, contentType, imageUrl, translations, meta,
 }) {
   return (
     <StaticQuery
       query={detailsQuery}
       render={(data) => {
-        const metaKeywords = keywords && keywords.length > 0
-          ? { name: 'keywords', content: keywords.join(', ') }
-          : [];
-        const pageUrl = Utils.resolvePageUrl(
-          Config.siteUrl,
-          Config.pathPrefix,
-          path,
-        );
-        const metaImageUrl = Utils.resolveUrl(
-          Config.siteUrl,
-          imageUrl || data.file.childImageSharp.fixed.src,
-        );
+        const metaKeywords = keywords && keywords.length > 0 ? { name: 'keywords', content: keywords.join(', ') } : [];
+        const pageUrl = Utils.resolvePageUrl(Config.siteUrl, Config.pathPrefix, path);
+        const metaImageUrl = Utils.resolveUrl(Config.siteUrl, imageUrl || data.file.childImageSharp.fixed.src);
 
         return (
           <Helmet
@@ -84,11 +67,7 @@ function SEO({
                   ? translations.map((obj) => ({
                     rel: 'alternate',
                     hreflang: obj.hreflang,
-                    href: Utils.resolvePageUrl(
-                      Config.siteUrl,
-                      Config.pathPrefix,
-                      obj.path,
-                    ),
+                    href: Utils.resolvePageUrl(Config.siteUrl, Config.pathPrefix, obj.path),
                   }))
                   : [],
               )}

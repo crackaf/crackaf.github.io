@@ -8,12 +8,7 @@ const AboutTile = (props) => {
   return (
     <div className={style.aboutTile}>
       <div className={style.aboutBlock}>
-        <img
-          src={`../${img}`}
-          height={height || 64}
-          width={width || 64}
-          alt={alt || ''}
-        />
+        <img src={`../${img}`} height={height || 64} width={width || 64} alt={alt || ''} />
       </div>
       <div className={`textCenter ${style.mrTp26PX}`}>
         <h4>{textH4 || ''}</h4>

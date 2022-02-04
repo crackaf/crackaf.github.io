@@ -17,7 +17,7 @@ module.exports = [
     resolve: 'gatsby-plugin-manifest',
     options: {
       name: 'Hunzlah Malik',
-      short_name: 'GHOST',
+      short_name: 'crackaf',
       start_url: '/',
       background_color: '#304CFD',
       theme_color: '#304CFD',
@@ -102,4 +102,5 @@ module.exports = [
       showSpinner: true,
     },
   },
+  'gatsby-plugin-client-side-redirect',
 ];

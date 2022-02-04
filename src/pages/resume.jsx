@@ -39,14 +39,10 @@ export default class Resume extends Component {
         />
         <p>
           If failed!
-          <a href="/resume.pdf">
-            Click Here
-          </a>.
+          <a href="/HunzlahMalikResume.pdf">Click Here</a>
+          .
         </p>
-        <Document
-          file="../resume.pdf"
-          onLoadSuccess={this.onDocumentLoadSuccess}
-        >
+        <Document file="../HunzlahMalikResume.pdf" onLoadSuccess={this.onDocumentLoadSuccess}>
           <Page pageNumber={pageNumber} />
         </Document>
         <Row justify="center" style={{ background: 'lightslategray' }}>
@@ -54,7 +50,9 @@ export default class Resume extends Component {
             <p>{`Page ${pageNumber} of ${numPages}`}</p>
           </Col>
           <Col span={2}>
-            <Button type="primary" onClick={pageToggle}>{pageNumber === 1 ? 'Next Page' : 'Previous Page'}</Button>
+            <Button type="primary" onClick={pageToggle}>
+              {pageNumber === 1 ? 'Next Page' : 'Previous Page'}
+            </Button>
           </Col>
         </Row>
       </div>

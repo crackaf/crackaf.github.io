@@ -1,12 +1,12 @@
 module.exports = {
   pathPrefix: '',
-  siteUrl: 'https://ghostdart.github.io/',
+  siteUrl: 'https://crackaf.github.io/',
   siteTitle: 'Hunzlah Malik',
-  siteDescription: 'Portfolio of a software developer',
+  siteDescription: 'Portfolio of a Software Developer',
   author: 'Hunzlah ',
   postsForArchivePage: 3,
   defaultLanguage: 'en',
-  disqusScript: process.env.DISQUS_SCRIPT || '#', //'https://ghostdart.disqus.com/embed.js',
+  disqusScript: process.env.DISQUS_SCRIPT || '#', // 'https://crackaf.disqus.com/embed.js',
   pages: {
     home: '/',
     blog: 'blog',
@@ -16,10 +16,11 @@ module.exports = {
     tag: 'tags',
   },
   social: {
-    github: 'https://github.com/ghostdart',
+    github: 'https://github.com/crackaf',
     facebook: 'https://www.facebook.com/',
     twitter: 'https://twitter.com/',
     instagram: 'https://www.instagram.com/hunzlahmalik/',
+    linkedIn: 'https://www.linkedin.com/in/hunzlahmalik/',
     rss: '/rss.xml',
   },
   contactFormUrl: process.env.CONTACT_FORM_ENDPOINT || 'https://getform.io/f/758b7a1b-7fa6-459c-aa7f-7c54c4556a8a',
@@ -32,7 +33,8 @@ module.exports = {
     },
     javascript: {
       name: 'javascript',
-      description: 'JavaScript is an object-oriented programming language used alongside HTML and CSS to give functionality to web pages.',
+      description:
+        'JavaScript is an object-oriented programming language used alongside HTML and CSS to give functionality to web pages.',
       color: '#f0da50',
     },
     nodejs: {
@@ -77,12 +79,14 @@ module.exports = {
     },
     cpp: {
       name: 'C++',
-      description: 'C++ is a general-purpose programming language created by Bjarne Stroustrup as an extension of the C programming language, or "C with Classes.',
+      description:
+        'C++ is a general-purpose programming language created by Bjarne Stroustrup as an extension of the C programming language, or "C with Classes.',
       color: '#3b6deb',
     },
     c: {
       name: 'C',
-      description: 'C is a general-purpose, procedural computer programming language supporting structured programming, lexical variable scope, and recursion, with a static type system. By design, C provides constructs that map efficiently to typical machine instructions.',
+      description:
+        'C is a general-purpose, procedural computer programming language supporting structured programming, lexical variable scope, and recursion, with a static type system. By design, C provides constructs that map efficiently to typical machine instructions.',
       color: '#3b6deb',
     },
     smallproject: {
@@ -100,6 +104,5 @@ module.exports = {
       description: 'Some past projects from freelancing and university.',
       color: '#ab34ea',
     },
-
   },
 };

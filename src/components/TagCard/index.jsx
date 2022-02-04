@@ -25,9 +25,7 @@ const TagCard = (props) => {
               {name}
             </h4>
           </div>
-          <p>
-            {description}
-          </p>
+          <p>{description}</p>
         </div>
       </div>
     </Link>
