@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://ghostdart.github.io/sitemap/sitemap-index.xml
-Host: https://ghostdart.github.io
+Sitemap: https://crackaf.github.io/sitemap/sitemap-index.xml
+Host: https://crackaf.github.io
